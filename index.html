@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApnaGym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            overflow: auto;
+            background: url(/img/bg.jpg.jpg);
+            box-sizing: border-box;
+
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 27px;
+            left: 50px;
+            /* border: 2px solid red; */
+
+            /* float: left; */
+
+        }
+
+        .left img {
+            width: 95px;
+            filter: invert(100%);
+            margin-top: -40px;
+
+
+        }
+
+        .mid {
+             
+            display: block;
+            width: 35%;
+            margin: 0px auto;
+            
+
+
+
+
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid green; */
+            position: absolute;
+            top: 27px;
+            right: 34px;
+
+        }
+
+        .class li {
+
+            display: inline-block;
+            padding: 5px 5px;
+            margin: 11px 6px;
+            /* border: 2px solid black; */
+            border-radius: 13px;
+
+            list-style: none;
+
+        }
+
+        .class a {
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            border-radius: 20px;
+
+        }
+
+        .class li a:hover {
+            text-decoration: underline;
+            color:  yellowgreen;
+
+        }
+        /* .class li a.active{
+            text-decoration: underline;
+            color: darkgreen; */
+
+        /* } */
+
+        .left h3 {
+
+            margin: auto;
+            padding: 0px 6px;
+            padding-top: 0px;
+            margin-top: -7px;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .btn {
+            margin: 5px 13px;
+            color: whitesmoke;
+            background-color: black;
+
+            padding: 4px 12px;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+
+            font-size: 17px;
+        }
+
+        .btn:hover {
+            color: yellow;
+            background-color: red;
+        }
+
+        .container {
+            border: 2px solid white;
+            padding: 277px 14px;
+            margin: 69px 4px;
+            width: 35%;
+            border-radius: 70px;
+            float: right;
+        }
+
+        .container h1 {
+            width: 102%;
+            position: relative;
+            bottom: 183px;
+            color: #80cbc4;
+            text-align: center;
+
+        }
+
+        .form-group input {
+            width: 324px;
+            border: 2px solid red;
+            border-radius: 31px;
+            height: 42px;
+            margin: 11px 99px;
+            position: relative;
+            bottom: 188px;
+            display: block;
+            font-size: 30px;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        .container button {
+            display: block;
+            width: 62%;
+            margin: 21px auto;
+            position: relative;
+            bottom: 184px;
+            height: 47px;
+            border-radius: 30px;
+            background-color: red;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 25px;
+            
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="class">
+
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="/bg.png" alt="">
+            <div>
+                <h3>ApnaGym</h3>
+            </div>
+
+        </div>
+
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Right box for button -->
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+
+    </header>
+
+    <div class="container">
+
+
+        <form action="noaction.php">
+            <h1>ApnaGym Is Now open In Bihar</h1>
+
+            <div class="form-group">
+                <input type="text" name="" id="name" placeholder="Enter your name">
+
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder=" Enter your Email">
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="number" placeholder="Enter your number">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder=" Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+
+            </div>
+
+            <button class="btn">Submit</button>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
